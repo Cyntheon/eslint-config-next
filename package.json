@@ -22,6 +22,7 @@
     "typescript": "^4.3.4"
   },
   "peerDependencies": {
-    "eslint": "^7"
+    "eslint": "^7",
+    "next": "^11"
   }
 }
