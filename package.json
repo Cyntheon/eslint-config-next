@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-cyntheon",
-  "version": "1.0.1",
+  "name": "@cyntheon/eslint-config-next",
+  "version": "1.0.0",
   "description": "An ESLint config for Next.js/TypeScript",
-  "homepage": "https://github.com/Cyntheon/eslint-config-cyntheon",
+  "homepage": "https://github.com/Cyntheon/eslint-config-next",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Cyntheon/eslint-config-cyntheon"
+    "url": "https://github.com/Cyntheon/eslint-config-next"
   },
   "license": "MIT",
   "author": "Cyntheon",
