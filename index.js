@@ -1,28 +1,32 @@
 module.exports = {
+  "root": false,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ],
+  "extends": [
+    "@cyntheon/typescript",
+    "next",
+    "next/core-web-vitals"
+  ],
   "env": {
     "browser": true,
     "node": true
   },
-  "extends": [
-    "@cyntheon/typescript",
-    "next",
-    "next/core-web-vitals",
-  ],
   "globals": {
     "JSX": true,
     "React": true
   },
-  "ignorePatterns": [
-    "next-env.d.ts"
-  ],
   "rules": {
     "jsx-quotes": [
       "error",
       "prefer-double"
     ],
-    // https://github.com/yannickcr/eslint-plugin-react
     "react/button-has-type": "error",
-    //    "react/forbid-elements": 0
     "react/no-access-state-in-setstate": "error",
     "react/no-array-index-key": "warn",
     "react/no-danger": "warn",
@@ -38,7 +42,6 @@ module.exports = {
     "react/prefer-stateless-function": "error",
     "react/self-closing-comp": "error",
     "react/void-dom-elements-no-children": "error",
-    // JSX-specific rules
     "react/jsx-closing-bracket-location": "error",
     "react/jsx-closing-tag-location": "error",
     "react/jsx-curly-brace-presence": [
@@ -97,8 +100,13 @@ module.exports = {
         "arrow": "parens-new-line",
         "condition": "parens-new-line",
         "logical": "parens-new-line",
-        "prop": "parens-new-line"
+        "prop": false
       }
-    ]
+    ],
+    "@emotion/pkg-renaming": "error",
+    "@emotion/jsx-import": "off",
+    "@emotion/no-vanilla": "error",
+    "@emotion/import-from-emotion": "error",
+    "@emotion/styled-import": "error"
   }
 };
