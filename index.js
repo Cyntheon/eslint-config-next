@@ -9,9 +9,12 @@ module.exports = {
     }
   ],
   "extends": [
-    "@cyntheon/typescript",
     "next",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "@cyntheon/typescript"
+  ],
+  "plugins": [
+    "@emotion"
   ],
   "env": {
     "browser": true,

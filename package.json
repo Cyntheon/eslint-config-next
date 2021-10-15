@@ -1,6 +1,6 @@
 {
   "name": "@cyntheon/eslint-config-next",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "An ESLint config for Next.js/TypeScript",
   "homepage": "https://github.com/Cyntheon/eslint-config-next",
   "repository": {
@@ -16,11 +16,15 @@
     "README.md"
   ],
   "dependencies": {
-    "@cyntheon/eslint-config-typescript": "^2.1.0",
-    "eslint-config-next": "^11.1.2"
+    "@cyntheon/eslint-config-typescript": "^2.2.0",
+    "@emotion/eslint-plugin": "^11.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
+    "prettier": "^2.4.1"
   },
   "peerDependencies": {
-    "eslint": "^8",
+    "@emotion/react": "^11",
+    "eslint": "^7",
     "next": "^11"
   }
 }
